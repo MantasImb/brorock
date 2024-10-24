@@ -1,0 +1,14 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import LeaderboardComponent from "@/components/LeaderboardComponent.tsx";
+---
+
+<Layout title="Leaderboard">
+	<PageLayout
+		title="Leaderboard"
+		description=`Earn points to climb the leaderboard for protocol rewards`
+	>
+		<LeaderboardComponent client:load />
+	</PageLayout>
+</Layout>

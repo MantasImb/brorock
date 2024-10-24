@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import ArbitrageEarn from "@/components/ArbitrageEarn.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="Incentives">
+	<PageLayout
+		title="Incentives"
+		description=`Provide liquidity a${values.coinSymbol} to earn protocol rewards.`
+	>
+		<ArbitrageEarn client:load />
+	</PageLayout>
+</Layout>

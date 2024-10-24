@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import LPStaking from "@/components/LPStaking.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="401k">
+	<PageLayout
+		title="LP Staking Equity"
+		description=`Stake ${values.coinSymbol}-LP to earn protocol rewards`
+	>
+		<LPStaking client:load />
+	</PageLayout>
+</Layout>

@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { values } from "../values";
+---
+
+<Layout title=`Welcome to ${values.coinName}`>
+	<PageLayout
+		title=`Welcome to ${values.coinName}`
+		description=`Confirm protocol health by auditing supply and reserves`
+	>
+		<div class="flex flex-wrap justify-around items-center w-full gap-4">
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl space-x-2"
+			>
+				<p>{values.coinSymbol} Price</p>
+				<p class="text-highlight font-bold">$0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>{values.coinSymbol} circulating supply</p>
+				<p class="text-highlight font-bold">0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Total Supply</p>
+				<p class="text-highlight font-bold">0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Market Cap</p>
+				<p class="text-highlight font-bold">$0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>TVL</p>
+				<p class="text-highlight font-bold">$0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>APR</p>
+				<p class="text-highlight font-bold">0.00%</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Treasury value</p>
+				<p class="text-highlight font-bold">$0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Percentage of<br /> supply staked</p>
+				<p class="text-highlight font-bold">100%</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Total {values.coinSymbol} burned</p>
+				<p class="text-highlight font-bold">0.00</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Total LP burned</p>
+				<p class="text-highlight font-bold">0.00($0.00)</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Arbitrage fee</p>
+				<p class="text-highlight font-bold">0.00($0.00)</p>
+			</div>
+			<div
+				class="flex flex-col gap-1 items-center justify-center text-2xl"
+			>
+				<p>Debase ratio</p>
+				<p class="text-highlight font-bold">0.00%</p>
+			</div>
+		</div>
+	</PageLayout>
+</Layout>

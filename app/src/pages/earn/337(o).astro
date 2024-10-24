@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import Earn401K from "@/components/Earn401K.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="307(o)">
+	<PageLayout
+		title="Stake and Unstake"
+		description=`Stake ${values.coinSymbol} to be exempt from token debase and earn protocol rewards.`
+	>
+		<Earn401K client:load />
+	</PageLayout>
+</Layout>

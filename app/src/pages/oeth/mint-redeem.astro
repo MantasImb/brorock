@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import Breth from "@/components/Breth.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="Mint and Redeem">
+	<PageLayout
+		title="Mint and Redeem"
+		description=`Mint ${values.coinSymbol}ETH and redeem.`
+	>
+		<Breth client:load />
+	</PageLayout>
+</Layout>

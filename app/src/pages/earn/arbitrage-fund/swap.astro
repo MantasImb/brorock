@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import ArbitrageFundSwap from "@/components/SwapArb.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="Swap">
+	<PageLayout
+		title="Swap on Arbitrage Fund"
+		description=`Swap for ${values.coinSymbol} on Arbitrage Fund.`
+	>
+		<ArbitrageFundSwap client:load />
+	</PageLayout>
+</Layout>

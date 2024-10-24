@@ -1,0 +1,15 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import BridgeComponent from "@/components/BridgeComponent.tsx";
+import { values } from "@/values";
+---
+
+<Layout title="Bridge">
+	<PageLayout
+		title="Bridge"
+		description=`Bridge ${values.coinSymbol} to Ethereum, Base or Avax.`
+	>
+		<BridgeComponent />
+	</PageLayout>
+</Layout>
